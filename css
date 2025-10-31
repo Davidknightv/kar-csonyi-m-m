@@ -41,7 +41,7 @@ p {
 }
 
 /* ======== KÉPEK és VIDEÓK ======== */
-img, video {
+img,  első video {
   width: 100%;
   height: auto;
   max-width: 800px;
@@ -50,6 +50,16 @@ img, video {
   margin: 20px auto;
   display: block;
 }
+második video {
+ width: 100%;
+  height: auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  display: block;
+}
+
 
 /* ======== LÁBLÉC ======== */
 footer {
@@ -92,5 +102,6 @@ footer {
     max-height: 400px;
   }
 }
+
 
 
