@@ -1,86 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+
+/* ======== ALAPSTÍLUSOK ======== */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* ======== FEJLÉC ======== */
 header {
-    background-color: #c00;
-    color: white;
-    padding: 20px;
+  background-color: #c00;
+  color: white;
+  padding: 20px;
 }
 
 header img {
-    width: 100%;
-    height: auto;
-    max-height: 250px;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
 }
 
+/* ======== TARTALOM ======== */
 main {
-    padding: 20px;
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1200px; /* nagyobb képernyőkön középre zárja a tartalmat */
+  margin: 0 auto;
+  padding: 20px;
 }
-
-
 
 p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1rem;
-    line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-video {
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px gray;
-    margin-top: 20px;
+/* ======== KÉPEK és VIDEÓK ======== */
+img, video {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  display: block;
 }
 
+/* ======== LÁBLÉC ======== */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
 }
 
-/* 📱 Mobilra optimalizált nézet */
-@media (max-width: 600px) {
-    header img {
-        max-height: 180px;
-    }
+/* ======== KISEBB KIJELZŐKRE (MOBIL/TABLET) ======== */
+@media (max-width: 900px) {
+  header img {
+    max-height: 220px;
+  }
 
-    h1 {
-        font-size: 1.5em;
-    }
+  main {
+    padding: 15px;
+  }
 
-    p {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    video {
-        width: 100%;
-        max-width: none;
-    }
+  video, img {
+    max-width: 100%;
+  }
+}
 
-    footer {
-        font-size: 0.9em;
-    }
-}/* 💻 Asztali nézet javítása */
-@media (min-width: 1000px) {
-    p {
-        font-size: 1.1rem;
-    }
+/* ======== NAGY MONITOROK (FULL HD, 4K) ======== */
+@media (min-width: 1600px) {
+  main {
+    max-width: 1400px;
+  }
 
-    video {
-        max-width: 800px;
-    }
+  p {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    max-height: 400px;
+  }
 }
 
